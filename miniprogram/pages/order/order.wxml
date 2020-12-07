@@ -1,0 +1,62 @@
+<!--miniprogram/pages/order/order.wxml-->
+<import src="order.skeleton.wxml" />
+<template is="skeleton" wx:if="{{loading}}" />
+
+<view  wx:else> 
+
+<view class="order">
+
+  <view class="order-wrapper">
+ 
+    <!-- 订单内容列表 -->
+    <view class="order-content">
+
+      <!-- 订单 -->
+      <view class="order-box" wx:for="{{orderData}}" wx:key="index">
+        <!-- 订单号 -->
+        <view class="order-number">
+          {{item.orderNo}}
+        </view>
+
+        <view class="pro-wrapper">
+          <!-- 商品列表 -->
+          <view class="pro-box clearfix" wx:for="{{item.products}}" wx:for-item="v" wx:for-index="i" wx:key="i">
+            <!-- 商品图片 -->
+            <view class="img-box fl">
+              <image class="auto-img imgbox" mode="widthFix" src="{{v.product.icon}}"></image>
+            </view>
+            <!-- 商品信息 规格 数量 -->
+            <view class="pro-info fl">
+              <view class="pro-name">{{v.product.name}}</view>
+              <view class="pro-rule">{{v.rule}}</view>
+              <view class="price-count-box clearfix">
+                <view class="price fl">￥{{v.product.price}}</view>
+                <view class="count fr">x{{v.count}}</view>
+              </view>
+            </view>
+          </view>
+        </view>
+
+        <view class="footer-box">
+          <div class="circle">
+            <div class="fl circle-box circle-left"></div>
+            <div class="fr circle-box circle-right"></div>
+          </div>
+          <!-- 时间 -->
+          <view class="time">{{item.date}}</view>
+          <view class="desc-box clearfix">
+            <view class="total-count fl">共计 {{item.productCount}} 件商品</view>
+            <view class="total-price fr">合计 ￥{{item.totalPrice}}</view>
+          </view>
+        </view>
+      </view>
+
+    </view>
+
+  </view>
+
+</view>
+
+<view class="not" wx:if="{{!isHas}}">我是有底线的</view>
+
+</view>

@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/order/order",
+    "pages/pay/pay",
+    "pages/address/address",
+    "pages/edit_address/edit_address",
+    "pages/my/my"
+  ],
+  "window": {
+    "backgroundColor": "#FCCFD0",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6686A",
+    "navigationBarTitleText": "味轩居",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#777",
+    "selectedColor": "#F6686A",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home-active.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "./images/order.png",
+        "selectedIconPath": "./images/order-active.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/my.png",
+        "selectedIconPath": "./images/my-active.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-stepper": "@vant/weapp/stepper/index",
+    "van-button": "@vant/weapp/button/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-cell": "@vant/weapp/cell/index"
+  }
+}

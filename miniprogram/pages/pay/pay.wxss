@@ -1,0 +1,178 @@
+@import "./pay.skeleton.wxss";
+
+page {
+  height: 100%;
+}
+
+.pay {
+  height: 100%;
+}
+
+
+.pay-wrapper {
+  padding: 20rpx;
+}
+
+.pay-address {
+  background-color: #fff;
+  padding: 20rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 0 30rpx #e8e8e8;
+}
+
+.address-title {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #444;
+}
+
+.address-info {
+  margin-top: 20rpx;
+}
+
+.receiver {
+  color: #444;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.isDefault {
+  display: inline-block;
+  margin-left: 20rpx;
+  padding: 2rpx;
+  width: 60rpx;
+  height: 30rpx;
+  font-size: 20rpx;
+  color: #fff;
+  background-color: #F6686A;
+  text-align: center;
+  line-height: 30rpx;
+  border-radius: 15rpx;
+  margin-top: 6rpx;
+}
+
+.phone {
+  color: #444;
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+}
+
+.address {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.pay-content {
+  padding: 20rpx;
+  border-radius: 16rpx;
+  box-shadow: 0 0 30rpx #e8e8e8;
+}
+
+.pro-box {
+  margin-bottom: 10rpx;
+  padding: 20rpx;
+  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 0 20rpx #e8e8e8;
+  border-radius: 20rpx;
+}
+
+.img-box {
+  margin-right: 20rpx;
+  width: 120rpx;
+  height: 133rpx;
+  border-radius: 10rpx;
+  overflow: hidden;
+}
+
+.imgbox {
+  height: 133rpx !important;
+}
+
+.pro-info {
+  width: calc(100% - 160rpx);
+}
+
+.pro-name {
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  color: #222;
+}
+
+.pro-rule {
+  margin-bottom: 10rpx;
+  font-size: 24rpx;
+  color: rgb(155, 151, 151);
+}
+
+.pro-price {
+  font-size: 28rpx;
+  color: #F6686A;
+}
+
+.pro-count {
+  margin-top: 50rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+
+.round{
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+}
+
+.count{
+  padding: 0 20rpx;
+  height: 48rpx;
+  font-size: 32rpx;
+  line-height: 48rpx;
+  color: #666;
+}
+
+.round-img{
+  height: 48rpx;
+}
+
+.p-count{
+  margin-top: 1rpx;
+}
+
+/* 修改步进器样式 */
+.minus-style {
+  border-radius: 50% !important;
+  color: #fff !important;
+  background-color: #FCCFD0 !important;
+  border-color: #F6686A !important;
+}
+
+.plus-style { 
+  border-radius: 50% !important;
+  color: #fff !important;
+  background-color: #F6686A !important;
+  border-color: #F6686A !important;
+}
+
+.ipt-class {
+  background-color: transparent !important;
+}
+
+/* 修改步进器样式 end*/
+
+.count-price-box {
+  margin-bottom: 80rpx;
+  color: #1E684D;
+}
+
+.pro-count {
+  margin-bottom: 10rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.total-price {
+  font-size: 36rpx;
+  font-weight: bold;
+}

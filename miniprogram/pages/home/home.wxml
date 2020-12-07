@@ -1,0 +1,53 @@
+<import src="home.skeleton.wxml" />
+<template is="skeleton" wx:if="{{loading}}" />
+
+<view class="home" wx:else>
+
+  <view class="home-content">
+    <!-- 背景 -->
+    <view class="home-bg"></view>
+    <!-- 内容 -->
+    <view class="home-box">
+      <view class="logo-box clearfix">
+        <view class="fl name">
+          味轩居
+          <!-- <text class="delivery">蜂鸟专送</text> -->
+          <view class="text">好吃又美味！</view>
+        </view>
+        <view class="fr logo">
+          <image class="auto-img img-box" mode="widthFix"
+            src="cloud://wxuanlive-pro-2gcoboyx2840f0ac.7778-wxuanlive-pro-2gcoboyx2840f0ac-1304340845/images/food.png"></image>
+        </view>
+      </view>
+      <view class="menu-list">
+        <text class="tips-title">你需要点什么？</text>
+        <view class="menu-tabs">
+          <view class="menu-item {{activeMenuIndex === index ? 'active' : ''}}" wx:for="{{menuList}}" wx:key="index"
+            data-index="{{index}}" data-type="{{item.type}}" bindtap="toggleMenuList">
+            <view class="imgBox">
+              <image class="auto-img img-box" mode="widthFix" src="{{item.image}}">
+              </image>
+            </view> 
+            <view class="dish-title">{{item.title}}</view>
+          </view>
+        </view>
+        <view class="menu-content">
+          <view class="menu-title">菜单列表</view>
+
+          <!-- 商品组件 -->
+          <product wx:for="{{products}}" wx:key="index" product-data="{{item}}" bindcurrentIndexEvent="modifyCurrentIndex" data-index="{{index}}" data-item="{{item}}" bindaddShopcart="modifyShopcartCount"></product>
+ 
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 购物车 -->
+  <view class="shopcart {{shopcartCount > 0 ? 'shopactive' : ''}}" bindtap="goPay">
+    <view class="shop-cart-img">
+      <image class="auto-img" mode="widthFix" src="{{shopcartCount > 0 ? '../../images/shopcart-active.png' : '../../images/shopcart.png'}}"></image>
+      <view class="bage" wx:if="{{shopcartCount > 0}}">{{shopcartCount}}</view> 
+    </view>
+  </view>
+
+</view>

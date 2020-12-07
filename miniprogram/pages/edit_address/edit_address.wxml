@@ -1,0 +1,62 @@
+<import src="edit_address.skeleton.wxml" />
+<template is="skeleton" wx:if="{{loading}}" />
+
+<view class="edit-address" wx:else>
+
+  <view class="address-info">
+
+    <view class="info-item clearfix">
+      <view class="fl receiver">收货人</view>
+      <view class="fl ipt">
+        <input class="ipt-text" placeholder="输入收货人" bindchange="changeIptValue" value="{{addressInfo.receiver}}"
+          data-key="receiver" />
+      </view>
+    </view>
+
+    <view class="info-item clearfix">
+      <view class="fl receiver">手机号</view>
+      <view class="fl ipt">
+        <input class="ipt-text" placeholder="输入手机号" bindchange="changeIptValue" data-key="phone"
+          value="{{addressInfo.phone}}" />
+      </view>
+    </view>
+
+    <view class="info-item clearfix">
+      <view class="fl receiver">地区</view>
+      <view class="fl ipt">
+        <picker class="picker-box" mode="region" bindchange="changeIptValue" data-key="area">{{addressInfo.area}}
+        </picker>
+      </view>
+    </view>
+
+    <view class="info-item clearfix">
+      <view class="fl receiver">详细地址</view>
+      <view class="fl ipt">
+        <input class="ipt-text" placeholder="输入详细地址" bindchange="changeIptValue" data-key="detail"
+          value="{{addressInfo.detail}}" />
+      </view>
+    </view>
+  </view>
+
+  <view class="default-address clearfix">
+    <view class="fl default-title">设置默认地址</view>
+    <view class="fr">
+      <switch color="#F6686A" checked="{{addressInfo.isDefault}}" bindchange="changeIptValue" data-key="isDefault" />
+    </view>
+  </view>
+
+  <!-- 编辑按钮 -->
+  <view class="pay-btn-box" wx:if="{{_id}}">
+    <van-button block round color="#F6686A" size="normal" bindtap="saveAddress">保存地址</van-button>
+  </view>
+
+  <view class="pay-btn-box" wx:if="{{_id}}">
+    <van-button block round color="#F6686A" size="normal" bindtap="removeAddress">删除地址</van-button>
+  </view>
+
+  <!-- 提交按钮 -->
+  <view class="pay-btn-box" wx:else>
+    <van-button block round color="#F6686A" size="normal" bindtap="commit">新增地址</van-button>
+  </view>
+
+</view>

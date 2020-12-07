@@ -1,0 +1,63 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/12/2 上午9:05:16 
+使用方法：
+在 D:\Web前端\GZ2038(48)\2048\wxuanLive\miniprogram\pages\edit_address\edit_address.wxml 引入模板
+
+```
+<import src="edit_address.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 D:\Web前端\GZ2038(48)\2048\wxuanLive\miniprogram\pages\edit_address\edit_address.wxss 中引入样式
+```
+@import "./edit_address.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="edit-address">
+      <view class="address-info">
+        <view class="info-item clearfix sk-pseudo sk-pseudo-circle">
+          <view class="fl receiver sk-transparent sk-text-26-6667-632 sk-text">收货人</view>
+          <view class="fl ipt">
+            <view class="ipt-text sk-image" data-key="receiver" placeholder="输入收货人" value="true"></view>
+          </view>
+        </view>
+        <view class="info-item clearfix sk-pseudo sk-pseudo-circle">
+          <view class="fl receiver sk-transparent sk-text-26-6667-396 sk-text">手机号</view>
+          <view class="fl ipt">
+            <view class="ipt-text sk-image" data-key="phone" placeholder="输入手机号"></view>
+          </view>
+        </view>
+        <view class="info-item clearfix sk-pseudo sk-pseudo-circle">
+          <view class="fl receiver sk-transparent sk-text-26-6667-443 sk-text">地区</view>
+          <view class="fl ipt">
+            <view class="picker-box sk-transparent sk-text-26-6667-955 sk-text sk-image" data-key="area" mode="region">选择地区</view>
+          </view>
+        </view>
+        <view class="info-item clearfix sk-pseudo sk-pseudo-circle">
+          <view class="fl receiver sk-transparent sk-text-26-6667-17 sk-text">详细地址</view>
+          <view class="fl ipt">
+            <view class="ipt-text sk-image" data-key="detail" placeholder="输入详细地址"></view>
+          </view>
+        </view>
+      </view>
+      <view class="default-address clearfix sk-pseudo sk-pseudo-circle">
+        <view class="fl default-title sk-transparent sk-text-27-4194-815 sk-text">设置默认地址</view>
+        <view class="fr">
+          <switch color="#EFEFEF" data-key="isDefault"></switch>
+        </view>
+      </view>
+      <view class="pay-btn-box">
+        <view is="miniprogram_npm/@vant/weapp/button/index">
+          <button app-parameter="true" business-id="true" class="van-button button-index--van-button van-button--default button-index--van-button--default van-button--normal button-index--van-button--normal van-button--block button-index--van-button--block van-button--round button-index--van-button--round sk-button sk-pseudo sk-pseudo-circle"
+            data-detail="null" form-type="true" hover-class="van-button--active hover-class" lang="true" open-type="true" send-message-img="true" send-message-path="true" send-message-title="true" session-from="true" style="color: white; background: rgb(246, 104, 106); border: none;">
+            <view class="van-button__text button-index--van-button__text sk-transparent sk-text-15-0000-807 sk-text" style="background-position-x: 50%;">提交</view>
+          </button>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

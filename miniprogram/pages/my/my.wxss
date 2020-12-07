@@ -1,0 +1,85 @@
+page {
+  height: 100%;
+}
+
+.my {
+  height: 100%;
+}
+
+.bg-box {
+  height: 350rpx;
+  background-color: #F6686A;
+}
+
+.user-content {
+  height: calc(100% - 550rpx);
+}
+
+.user-info,
+.info-btn
+{
+  height: 300rpx;
+}
+
+
+.user-box {
+  position: relative;
+  top: -200rpx;
+  background-color: #fff;
+  border-top-left-radius: 50rpx;
+  border-top-right-radius: 50rpx;
+}
+
+.user-img {
+  position: relative;
+  top: -120rpx;
+  margin: 0 auto;
+  width: 240rpx;
+  height: 240rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ddd;
+  box-shadow: 0 0 0 8rpx rgba(255, 255, 255, .3);
+}
+
+.user-name {
+  position: relative;
+  top: -125rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 32rpx;
+  color: #7B7B7B;
+}
+
+.user-options {
+  position: relative;
+  top: -40rpx;
+  background-color: green;
+}
+
+/* 修改 cell 样式 */
+.root-style {
+  height: 120rpx;
+  line-height: 120rpx;
+}
+
+.set-title {
+  padding-left: 40rpx;
+  color: #7B7B7B;
+  font-size: 24rpx;
+}
+
+/* 修改 cell 样式 end*/
+
+button:not([size='mini']) {
+  position: relative;
+  top: 111rpx;
+  font-weight: normal;
+  width: 200rpx;
+  padding: 0;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  color: #fff;
+  background-color: #F6686A;
+}

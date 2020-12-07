@@ -1,0 +1,122 @@
+<!--
+此文件为开发者工具生成，生成时间: 2020/12/4 下午6:56:57 
+使用方法：
+在 D:\Web前端\GZ2038(48)\2048\微信小程序\wxuanLive\miniprogram\pages\order\order.wxml 引入模板
+
+```
+<import src="order.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 D:\Web前端\GZ2038(48)\2048\微信小程序\wxuanLive\miniprogram\pages\order\order.wxss 中引入样式
+```
+@import "./order.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="order">
+      <view class="bg-box">
+        <text class="sk-transparent sk-text-21-2500-598 sk-text">订单</text>
+      </view>
+      <view class="order-wrapper">
+        <view class="order-content">
+          <view class="order-box">
+            <view class="order-number sk-transparent sk-text-32-5000-798 sk-text" style="border: none;">
+              NO165989466566664
+            </view>
+            <view class="pro-wrapper">
+              <view class="pro-box clearfix sk-pseudo sk-pseudo-circle">
+                <view class="img-box fl">
+                  <image class="auto-img imgbox sk-image" mode="widthFix"></image>
+                </view>
+                <view class="pro-info fl">
+                  <view class="pro-name sk-transparent sk-text-14-2857-102 sk-text">皮蛋瘦肉粥</view>
+                  <view class="pro-rule sk-transparent sk-text-14-2857-706 sk-text">葱 / 微辣</view>
+                  <view class="price-count-box clearfix sk-pseudo sk-pseudo-circle">
+                    <view class="price fl sk-transparent sk-text-14-2857-177 sk-text">￥14元</view>
+                    <view class="count fr sk-transparent sk-text-10-0000-417 sk-text">x1</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="pro-wrapper">
+              <view class="pro-box clearfix sk-pseudo sk-pseudo-circle">
+                <view class="img-box fl">
+                  <image class="auto-img imgbox sk-image" mode="widthFix"></image>
+                </view>
+                <view class="pro-info fl">
+                  <view class="pro-name sk-transparent sk-text-14-2857-262 sk-text">皮蛋瘦肉粥</view>
+                  <view class="pro-rule sk-transparent sk-text-14-2857-176 sk-text">葱 / 微辣</view>
+                  <view class="price-count-box clearfix sk-pseudo sk-pseudo-circle">
+                    <view class="price fl sk-transparent sk-text-14-2857-867 sk-text">￥14元</view>
+                    <view class="count fr sk-transparent sk-text-10-0000-191 sk-text">x1</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="footer-box" style="border: none;">
+              <div class="circle">
+                <div class="fl circle-box circle-left"></div>
+                <div class="fr circle-box circle-right"></div>
+              </div>
+              <view class="time sk-transparent sk-text-14-2857-869 sk-text">2020-12-04 18:32:14</view>
+              <view class="desc-box clearfix sk-pseudo sk-pseudo-circle">
+                <view class="total-count fl sk-transparent sk-text-14-2857-777 sk-text">共计 2 件商品</view>
+                <view class="total-price fr sk-transparent sk-text-14-2857-557 sk-text">合计 ￥56</view>
+              </view>
+            </view>
+          </view>
+          <view class="order-box">
+            <view class="order-number sk-transparent sk-text-32-5000-798 sk-text" style="border: none;">
+              NO165989466566664
+            </view>
+            <view class="pro-wrapper">
+              <view class="pro-box clearfix sk-pseudo sk-pseudo-circle">
+                <view class="img-box fl">
+                  <image class="auto-img imgbox sk-image" mode="widthFix"></image>
+                </view>
+                <view class="pro-info fl">
+                  <view class="pro-name sk-transparent sk-text-14-2857-102 sk-text">皮蛋瘦肉粥</view>
+                  <view class="pro-rule sk-transparent sk-text-14-2857-706 sk-text">葱 / 微辣</view>
+                  <view class="price-count-box clearfix sk-pseudo sk-pseudo-circle">
+                    <view class="price fl sk-transparent sk-text-14-2857-177 sk-text">￥14元</view>
+                    <view class="count fr sk-transparent sk-text-10-0000-417 sk-text">x1</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="pro-wrapper">
+              <view class="pro-box clearfix sk-pseudo sk-pseudo-circle">
+                <view class="img-box fl">
+                  <image class="auto-img imgbox sk-image" mode="widthFix"></image>
+                </view>
+                <view class="pro-info fl">
+                  <view class="pro-name sk-transparent sk-text-14-2857-262 sk-text">皮蛋瘦肉粥</view>
+                  <view class="pro-rule sk-transparent sk-text-14-2857-176 sk-text">葱 / 微辣</view>
+                  <view class="price-count-box clearfix sk-pseudo sk-pseudo-circle">
+                    <view class="price fl sk-transparent sk-text-14-2857-867 sk-text">￥14元</view>
+                    <view class="count fr sk-transparent sk-text-10-0000-191 sk-text">x1</view>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view class="footer-box" style="border: none;">
+              <div class="circle">
+                <div class="fl circle-box circle-left"></div>
+                <div class="fr circle-box circle-right"></div>
+              </div>
+              <view class="time sk-transparent sk-text-14-2857-869 sk-text">2020-12-04 18:32:14</view>
+              <view class="desc-box clearfix sk-pseudo sk-pseudo-circle">
+                <view class="total-count fl sk-transparent sk-text-14-2857-777 sk-text">共计 2 件商品</view>
+                <view class="total-price fr sk-transparent sk-text-14-2857-557 sk-text">合计 ￥56</view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

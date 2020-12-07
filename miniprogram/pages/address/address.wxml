@@ -1,0 +1,24 @@
+<import src="address.skeleton.wxml" />
+<template is="skeleton" wx:if="{{loading}}" /> 
+
+<view class="address" wx:else>
+
+  <view class="address-item clearfix" wx:for="{{addressList}}" wx:key="index" > 
+    <view class="fl address-info" data-_id="{{item._id}}" bindtap="selectAddress">
+      <view class="clearfix">
+        <view class="user fl">{{item.receiver}}</view>
+        <view class="phone fl">{{item.phone}}</view>
+        <view class="default fl" wx:if="{{item.isDefault}}">默认</view>
+      </view>
+      <view class="info two-text">{{item.detailAddress}}</view>
+    </view>
+    <view class="fl edit"  data-_id="{{item._id}}" data-url="{{url}}"bindtap="goPage">
+      <van-icon name="edit" size="50rpx" color="#777" />
+    </view>
+  </view>
+
+  <view class="pay-btn-box">
+    <van-button block round color="#F6686A" size="normal" bind:click="goPage" data-url="{{url}}">新增地址</van-button>
+  </view>
+
+</view>

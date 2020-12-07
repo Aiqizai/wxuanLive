@@ -1,0 +1,66 @@
+@import "./address.skeleton.wxss";
+
+.address{
+  padding: 20rpx 20rpx 120rpx;
+}
+
+.edit{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 40rpx;
+  margin-right: 10rpx;
+}
+
+.address-item{
+  background-color: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 0 20rpx #e8e8e8;
+}
+
+.address-item:last-child{
+  margin-bottom: 0;
+}
+
+.address-info{
+  width: calc(100% - 80rpx);
+  height: 120rpx;
+  background-color: ddd;
+  margin-right: 20rpx;
+}
+
+.user{
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #444;
+}
+
+.phone{
+  color: #444;
+  font-size: 28rpx;
+  margin: 0 20rpx;
+  margin-top: 2rpx;
+}
+
+.default{
+  width: 60rpx;
+  height: 30rpx;
+  font-size: 20rpx;
+  color: #fff;
+  background-color: #F6686A;
+  text-align: center;
+  line-height: 30rpx;
+  border-radius: 15rpx;
+  margin-top: 6rpx;
+}
+
+.info{
+  margin-top: 30rpx;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.pay-btn-box{
+  margin-top: 60rpx;
+}

@@ -1,0 +1,73 @@
+<import src="pay.skeleton.wxml" />
+<template is="skeleton" wx:if="{{loading}}" />
+
+<view class="pay" wx:else>
+
+  <view class="pay-wrapper">
+
+    <!-- 收货地址 -->
+    <view class="pay-address">
+      <view class="address-title" bindtap="goPage">
+        选择收货地址
+        <van-icon name="arrow" custom-style="position: relative;top: 6rpx;left: 10rpx" />
+      </view>
+      <view class="address-info" wx:if="{{addressInfo.detailAddress}}">
+        <view class="receiver">
+          {{addressInfo.receiver}}
+          <text class="isDefault" wx:if="{{addressInfo.isDefault}}">默认</text>
+        </view>
+        <view class="phone">{{addressInfo.phone}}</view>
+        <view class="address">{{addressInfo.detailAddress}}</view>
+      </view>
+    </view>
+
+    <!-- 商品内容 -->
+    <view class="pay-content">
+      
+      <!-- 商品 -->
+      <view class="pro-box clearfix" wx:for="{{productData}}" wx:key="index">
+        <!-- 商品图片 -->
+        <view class="img-box fl">
+          <image class="auto-img imgbox" mode="widthFix" src="{{item.product.icon}}"></image>
+        </view>
+        <!-- 商品名称 规格 -->
+        <view class="pro-info fl">
+          <view class="pro-name-rule fl">
+            <view class="pro-name">{{item.product.name}}</view>
+            <view class="pro-rule">{{item.rule}}</view>
+            <view class="pro-price">￥{{item.product.price}}</view>
+          </view>
+          <!-- 商品数量 -->
+          <view class="pro-count fr">
+            <view class="clearfix p-count">
+              <view class="fl round" data-index="{{index}}" bindtap="decrease">
+                <image class="auto-img round-img" mode="widthFix" src="../../images/decrease.png"></image>
+              </view>
+              <view class="fl count">{{item.count}}</view>
+              <view class="fl round" data-index="{{index}}" bindtap="increase">
+                <image class="auto-img round-img" mode="widthFix" src="../../images/increase.png"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+
+      <!-- 数量 总价 -->
+      <view class="count-price-box">
+        <view class="pro-count">
+          数量：{{proInfo.count}}
+        </view>
+        <view class="total-price clearfix">
+          <view class="price-left fl">总价:</view>
+          <view class="price-right fr">￥{{proInfo.total}}元</view>
+        </view>
+
+      </view>
+
+      <!-- 去支付 -->
+      <van-button block round color="#F6686A" size="normal" bindtap="pay">去支付</van-button>
+    </view>
+
+  </view>
+
+</view>

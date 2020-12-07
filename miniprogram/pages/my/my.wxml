@@ -1,0 +1,24 @@
+<view class="my">
+  <!-- 背景 -->
+  <view class="bg-box"></view>
+  <!-- 内容 -->
+  <view class="user-content">
+    <view class="user-box">
+      <view class="user-info" wx:if="{{isAuth}}">
+        <view class="user-img">
+          <image class="auto-img" mode="widthFix" src="{{userInfo.img}}"></image>
+        </view>
+        <view class="user-name">{{userInfo.nickname}}</view>
+      </view>
+      <view class="info-btn" wx:else>
+        <button class="auth-btn" open-type="getUserInfo" bindgetuserinfo="getUserAuthInfo">获取授权</button>
+      </view>
+     
+
+      <view class="user-options">
+        <van-cell wx:for="{{optionsData}}" wx:key="index" title="{{item.title}}" is-link size="large"
+          title-class="set-title" icon="{{item.icon}}" custom-class="root-style" center data-url="{{item.url}}" bind:click="goPage"/>
+      </view>
+    </view>
+  </view>
+</view>

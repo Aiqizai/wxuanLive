@@ -1,0 +1,69 @@
+@import "./edit_address.skeleton.wxss";
+
+page{
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.edit-address {
+  padding: 20rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 0 20rpx #e8e8e8;
+}
+
+.receiver {
+  font-size: 28rpx;
+  color: #444;
+  width: 120rpx;
+  line-height: 60rpx;
+}
+
+.ipt {
+  width: calc(100% - 140rpx);
+  height: 60rpx;
+  margin-left: 20rpx;
+  line-height: 60rpx;
+}
+
+.info-item {
+  background-color: #fff;
+  padding: 20rpx;
+}
+
+.ipt-text {
+  height: 60rpx;
+  background-color: transparent;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 60rpx;
+}
+
+.picker-box {
+  height: 60rpx;
+  font-size: 28rpx;
+  line-height: 60rpx;
+  color: #666;
+}
+
+.address-info {
+  border-radius: 20rpx;
+  overflow: hidden;
+}
+
+.default-address {
+  margin-top: 60rpx;
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+}
+
+.default-title {
+  height: 62rpx;
+  font-size: 28rpx;
+  color: #444;
+  line-height: 62rpx;
+}
+
+.pay-btn-box{
+  margin-top: 40rpx;
+}
